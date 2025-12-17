@@ -11,11 +11,20 @@
   ],
   "require": {
     "php": "^8.2",
-    "lighthouse/framework": "^0.1"
+    "lighthouse/framework": "dev-main"
   },
   "require-dev": {
     "phpunit/phpunit": "^11.0"
   },
+  "repositories": [
+    {"type": "vcs", "url": "https://github.com/RichardTrujilloTorres/http"},
+    {"type": "vcs", "url": "https://github.com/RichardTrujilloTorres/container"},
+    {"type": "vcs", "url": "https://github.com/RichardTrujilloTorres/middleware"},
+    {"type": "vcs", "url": "https://github.com/RichardTrujilloTorres/router"},
+    {"type": "vcs", "url": "https://github.com/RichardTrujilloTorres/view"},
+    {"type": "vcs", "url": "https://github.com/RichardTrujilloTorres/error-handler"},
+    {"type": "vcs", "url": "https://github.com/RichardTrujilloTorres/framework"}
+  ],
   "autoload": {
     "psr-4": {
       "App\\": "src/"
@@ -33,5 +42,6 @@
   "config": {
     "sort-packages": true
   },
-  "minimum-stability": "stable"
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
